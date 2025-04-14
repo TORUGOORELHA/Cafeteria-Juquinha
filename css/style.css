@@ -1,0 +1,95 @@
+/* Cor do header - #982417 */
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Jockey+One&family=Just+Me+Again+Down+Here&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --corprincipaldosite: #982417;
+    --cortexto: #FFF0D1;
+    --textodestaquecabesalho: #C7AB72;
+}
+
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+header{
+    display: flex;
+    height: 20vh;
+    background-color: var(--corprincipaldosite);
+    color: var(--cortexto);
+    padding: 10px;
+    
+    
+}
+
+.cabesalho{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+}
+
+.logo_titulo{
+    margin: 0;
+    display: flex;
+}
+.titulo{
+    position: relative;
+    top: 30px;
+    font-family: 'just me again down here', cursive;
+    font-size: 70px;
+}
+
+.cabesalho_destaque{
+    color: var(--textodestaquecabesalho);
+}
+
+
+.menu ul{
+    gap: 100px;
+    display: flex;
+}
+
+.menu li, a{
+    font-family: 'just me again down here', cursive;
+    font-size: 40px;
+    list-style: none;
+    text-decoration: none;
+    color: var(--cortexto);
+    padding: 0;
+    margin: 0;  
+}
+
+.sejafranqueado{
+    flex-direction: column;
+    width: 100vw;
+    height: 50vh;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 60%;
+    display: flex;
+    background-image: url(../img/banner_Dsk.png);
+}
+.fraq_registrar{
+    width: 300px;
+    height: 150px;
+    background-color: azure;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+}
