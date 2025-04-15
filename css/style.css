@@ -40,19 +40,21 @@ header{
     flex-direction: column;
 }
 .logo{
+    margin: 0;
+    padding: 0;
     width: 200px;
     height: 200px;
 }
 
 .logo_titulo{
-    margin: 0;
     display: flex;
 }
-.titulo{
+.nome_site{
     position: relative;
-    top: 30px;
+    top: 40px;
+    right: 20px;
     font-family: 'just me again down here', cursive;
-    font-size: 70px;
+    font-size: 90px;
 }
 
 .cabesalho_destaque{
@@ -66,6 +68,8 @@ header{
 }
 
 .menu li, a{
+    position: relative;
+    bottom: 10px;
     font-family: 'just me again down here', cursive;
     font-size: 40px;
     list-style: none;

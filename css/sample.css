@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.conteiner{
+    background-color: rgb(0, 128, 255);
+    /* tamanho em vw usa o tamanho da tela do dispositivo para definir seu tamanho */
+    width: 100vw;
+    /* max-width define um limite de tamnho logo após de usar definir o tamnho usando vw */
+    max-width: 1440px;
+    /* min-width define um limite minimo de tamanho logo antes de usar definir o tamnho usando vw */
+    min-width: 375px;
+}
+.cols{
+    box-shadow: 2px 5px 5px rgb(72, 72, 72);
+    border-radius: 15%;
+    width: 100vw;
+    display: flex;
+}
+
+.parceiros, .mkt{
+    box-shadow: 2px 5px 5px rgb(72, 72, 72);
+    border-radius: 15%;
+    background-color: white;
+    margin: 0;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+@media screen and (max-width:500px){
+    .cols{
+        flex-direction: column;
+    }
+    .parceiros, .mkt{
+        width: 100%;
+        box-shadow: 2px 5px 5px rgb(72, 72, 72);
+    border-radius: 15%;
+    }
+    
+}
+
+@media print{
+
+}
