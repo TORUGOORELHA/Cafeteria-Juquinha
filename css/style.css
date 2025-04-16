@@ -1,5 +1,8 @@
 /* Cor do header - #982417 */
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Jockey+One&family=Just+Me+Again+Down+Here&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+
 
 :root{
     --corprincipaldosite: #982417;
@@ -17,9 +20,7 @@ body{
 }
 main{
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
+    
 }
 
 header{
@@ -80,20 +81,68 @@ header{
 }
 
 .sejafranqueado{
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    width: 100vw;
-    height: 50vh;
-    background-repeat: no-repeat;
-    position: relative;
-    left: 60%;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
     display: flex;
     background-image: url(../img/banner_Dsk.png);
 }
 .fraq_registrar{
-    width: 300px;
-    height: 150px;
-    background-color: azure;
-    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1535px;
+    width: 589px;
+    height: 237px;
+    background-color: rgba(254, 254, 254, 0.808);
     justify-content: center;
     align-items: center;
+}
+.fraq_registrar h1{
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+    justify-content: center;
+    font-family: "lekton", sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+}
+.fraq_registrar h3{
+    position: relative;
+    font-family: "inria sans", sans-serif;
+    font-size: 28px;
+
+}
+.destaque_mais_cresce{
+    color: brown;
+}
+
+.buttons_franq{
+    position: relative;
+    top: 30px;
+    left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.button_RI{
+    border-radius: 6px;
+    padding: 8px 16px 8px 16px;
+    background-color: #FF9C2D;
+    width: 162px;
+    height: 35px;
+}
+
+.button_SM{
+    border-radius: 6px;
+    Padding: 8px 16px 8px 16px;
+    border: 1px solid #FF9C2D;
+    background-color: white;
+    width: 108px;
+    height: 35px;
 }
