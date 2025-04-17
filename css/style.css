@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Jockey+One&family=Just+Me+Again+Down+Here&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
-
+*{
+    margin: 0;
+    padding: 0;
+}
 
 :root{
     --corprincipaldosite: #982417;
@@ -70,7 +73,7 @@ header{
 
 .menu li, a{
     position: relative;
-    bottom: 10px;
+    bottom: 12px;
     font-family: 'just me again down here', cursive;
     font-size: 40px;
     list-style: none;
@@ -94,7 +97,7 @@ header{
 .fraq_registrar{
     display: flex;
     flex-direction: column;
-    margin-left: 1535px;
+    margin-left: 1310px;
     width: 589px;
     height: 237px;
     background-color: rgba(254, 254, 254, 0.808);
@@ -146,3 +149,69 @@ header{
     width: 108px;
     height: 35px;
 }
+.beneficios_vantagens{
+    width: 100vw;
+    height: 40vh;
+    /* display: flex; */
+    background-color: var(--cortexto);
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+#titulo_beneficios{
+    position: relative;
+    left: 10px;
+    top: 15px;
+    padding: 0px 0px 0px 7px;
+    border-left: 8px solid var(--corprincipaldosite);
+    text-align: left;
+    width: 352px;
+    height: 32px;
+    font-size: 32px;
+    bottom: 50px;
+    font-family: "lekton";
+    font-weight: 700px;
+    color: var(--corprincipaldosite);
+    margin-left: 3px var(--corprincipaldosite);
+
+}
+
+.beneficios{
+    position: relative;
+    top: 35px;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    align-items: center;
+}
+.beneficio img{
+    width: 96px;
+    height: 96px;
+}
+
+.beneficio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 16px;
+    padding: 32px 16px 32 16px;
+    width: 300px;
+    height: 249px;
+    background-color: white;
+}
+.beneficio h3{
+    width: 190px;
+    height: 19px;
+    font-family: "inria sans";
+    color: var(--corprincipaldosite);
+}
+.beneficio p{
+    width: 268px;
+    height: 38px;
+    font-family: "inria sans";
+    color: black;
+}
+
