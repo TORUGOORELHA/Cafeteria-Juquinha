@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- link rel do tipo icon adiciona um favicon do head no site -->
     <link rel="icon" href="img/logojucafé.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>JuCafé</title>
 </head>
@@ -16,7 +17,7 @@
     <nav class="navegacao">
         <header class="cabesalho">
             <div class="logo_titulo">
-                <img class="logo" src="img/logojucafé.png" alt="Logo da cafeteria Ju Café" width="100px" height="100px">
+                <img class="logo" src="img/logojucafe.png" alt="Logo da cafeteria Ju Café" width="100px" height="100px">
                 <h1 class="nome_site cabesalho_title">ju<span class="cabesalho_destaque">café</span></h1>
             </div>
             <div class="menu">
@@ -56,52 +57,68 @@
                 </div>
                 <div class="beneficio">
                     <img src="icons/teamwork.png" alt="Homens se comprimentando">
-                    <h3>Supoorte e Treinamento2s</h3>
+                    <h3>Supoorte e Treinamentos</h3>
                     <p>Todo apoio que o novo franqueado necessita!</p>
                 </div>
             </div>
         </section>
-        <section class="Depoimentos">
-            <h3>“Sempre gostei de café mas nunca pensei em transformar isto em um negócio, mas quando conheci a JuCafé e
-                seu modelo de negócio passei a vislumbrar um futuro promissor atuando com um produto que aprecio.
-
-                Estou muito realizada e agradeço a todo apoio da franquia nesta relação construída com diálogo e
-                confiança.”</h3>
-            <h1>Kamila Kaffman</h1>
-            <h5>Fraqueada - São Paulo SP</h5>
-            <img src="img/franqueado.png"
-                alt="mulher feliz de roupa executiva ao lado de uma janela com um notebook presionado a coxa">
+        <section class="depoimentos">
+            <h2 id="titulo_dp">Depoimentos</h2>
+            <div class="conteudo_dp">
+                <div class="text_dp">
+                    <h2 id="doc_dp">“Sempre gostei de café mas nunca pensei em transformar isto em um negócio, mas
+                        quando conheci a JuCafé e
+                        seu modelo de negócio passei a vislumbrar um futuro promissor atuando com um produto que
+                        aprecio.
+                        <br>
+                        <br>
+                        Estou muito realizada e agradeço a todo apoio da franquia nesta relação construída com diálogo e
+                        confiança.”</h3>
+                        <h2>Kamila Kaffman</h2>
+                        <h5>Franqueada - São Paulo SP</h5>
+                </div>
+                <img src="img/franqueado.png"
+                    alt="mulher feliz de roupa executiva ao lado de uma janela com um notebook presionado a coxa">
+            </div>
         </section>
         <section class="modelo_negocio">
-            <div class="modelo_bistro"></div>
-            <img src="img/modeloBistro_Dsk.png" alt="">
-            <h1>Modelo Bistrô</h1>
+            <h2 class="titulo_mn">Modelo de Negócio</h2>
+            <div class="conteudo_mn">
+            <div class="modelo_bistro">
+                <img src="img/modeloBistro_Dsk.png" alt="">
+                <h2>Modelo Bistrô</h2>
+                <div class="modelo_text">
+                    <ul class="list_mn">
+                        <li>a partir de 25 m²</li>
+                        <li>Investimento inicial a partir de 250 mil</li>
+                        <li>Faturamento anual R$2 milhões</li>
+                    </ul>
+                </div>
             </div>
-            <div class="modelo_quiosque"></div>
-            <img src="img/modeloBistro_Dsk.png" alt="">
-            <h1>Modelo Quiosque</h1>
+            <div class="modelo_quiosque">
+                <img src="img/modeloBistro_Dsk.png" alt="">
+                <h2>Modelo Quiosque</h2>
+                <div class="modelo_text">
+                    <ul class="list_mn">
+                        <li>a partir de 10 m²</li>
+                        <li>Investimento inicial a partir de 150 mil</li>
+                        <li>Faturamento anual R$ 750 mil</li>
+                    </ul>
+                </div>
             </div>
-            <ul>
-                <li>a partir de 25 m²</li>
-                <li>Investimento inicial a partir de 250 mil</li>
-                <li>Faturamento anual R$2 milhões</li>
-            </ul>
-            <ul>
-                <li>a partir de 10 m²</li>
-                <li>Investimento inicial a partir de 150 mil</li>
-                <li>Faturamento anual R$ 750 mil</li>
-            </ul>
+        </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="redesociais">
+        <div class="redes_sociais">
             <h2>Siga-nos nas redes sociais</h2>
-            <img src="icons/instagram.png" alt="logo do instagram">
-            <img src="icons/facebook.png" alt="logo do facebook">
+            <a href="https://web.whatsapp.com/"  target="_blank"><i class="footer_social-icon fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="footer_social-icon fa-brands fa-instagram"></i></a>
         </div>
-        <h2>Desenvolvido por XPTO Soluições Digitais</h2>
-        <div class="entre_contato"></div>
-        <h2>Entre em contato 0800 222 0032</h2>
+        <h2 id="footer_text_dvs">Desenvolvido por XPTO Soluições Digitais</h2>
+        <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><i class="footer_social-icon fa-brands fa-whatsapp"></i></a>
+        <div class="entre_contato">
+        <h2 id="footer_text_contato">Entre em contato 0800 222 0032</h2>
         </div>
     </footer>
 </body>

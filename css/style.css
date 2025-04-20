@@ -11,6 +11,8 @@
     --corprincipaldosite: #982417;
     --cortexto: #FFF0D1;
     --textodestaquecabesalho: #C7AB72;
+    --backcolorDepoimentos: #000000;
+    --colortextDP: white;
 }
 
 body{
@@ -64,7 +66,10 @@ header{
 .cabesalho_destaque{
     color: var(--textodestaquecabesalho);
 }
-
+.menu{
+    position: relative;
+    bottom: 30px;
+}
 
 .menu ul{
     gap: 100px;
@@ -72,8 +77,6 @@ header{
 }
 
 .menu li, a{
-    position: relative;
-    bottom: 12px;
     font-family: 'just me again down here', cursive;
     font-size: 40px;
     list-style: none;
@@ -82,6 +85,10 @@ header{
     padding: 0;
     margin: 0;  
 }
+.menu li:hover{
+    border-bottom: 5px solid var(--cortexto);
+    transition: 0.1s;
+}
 
 .sejafranqueado{
     margin-left: 0;
@@ -89,7 +96,7 @@ header{
     align-items: center;
     flex-direction: column;
     background-size: cover;
-    width: 100%;
+    width: 100vw;
     height: 70vh;
     display: flex;
     background-image: url(../img/banner_Dsk.png);
@@ -97,7 +104,7 @@ header{
 .fraq_registrar{
     display: flex;
     flex-direction: column;
-    margin-left: 1310px;
+    margin-left: 1330px;
     width: 589px;
     height: 237px;
     background-color: rgba(254, 254, 254, 0.808);
@@ -140,6 +147,11 @@ header{
     width: 162px;
     height: 35px;
 }
+.button_RI:hover{
+    background-color: #8f5819;
+    color: white;
+    transition: 0.1s;
+}
 
 .button_SM{
     border-radius: 6px;
@@ -149,9 +161,14 @@ header{
     width: 108px;
     height: 35px;
 }
+.button_SM:hover{
+    background-color: #afafaf;
+    color: white;
+    transition: 0.1s;
+}
 .beneficios_vantagens{
     width: 100vw;
-    height: 40vh;
+    height: 50vh;
     /* display: flex; */
     background-color: var(--cortexto);
     /* justify-content: center; */
@@ -160,30 +177,29 @@ header{
 
 #titulo_beneficios{
     position: relative;
-    left: 10px;
-    top: 15px;
+    left: 25px;
+    top: 30px;
+    gap: 10px;
     padding: 0px 0px 0px 7px;
     border-left: 8px solid var(--corprincipaldosite);
     text-align: left;
-    width: 352px;
+    width: 1376px;
     height: 32px;
     font-size: 32px;
     bottom: 50px;
     font-family: "lekton";
-    font-weight: 700px;
+    font-weight: bold;
     color: var(--corprincipaldosite);
-    margin-left: 3px var(--corprincipaldosite);
-
 }
 
 .beneficios{
     position: relative;
-    top: 35px;
+    top: 75px;
     gap: 30px;
     display: flex;
     justify-content: center;
-    gap: 150px;
     align-items: center;
+    gap: 150px;
 }
 .beneficio img{
     width: 96px;
@@ -214,4 +230,224 @@ header{
     font-family: "inria sans";
     color: black;
 }
+.beneficio:hover{
+    background-color: #c9c9c9;
+    color: white;
+    transition: 0.5s;
+}
+.beneficio:hover h3{
+    width: 235px;
+    height: 19px;
+    color: white;
+    transition: 0.1s;
+    font-size: 20px;
+}
+.depoimentos{
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backcolorDepoimentos);
+    width: 100vw;
+    height: 70vh;
+}
+.conteudo_dp{
+    position: relative;
+    top: 45px;
+    left: 250px;
+    width: 1376px;
+    height: 483px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 128px;
+}
+.conteudo_dp img:hover{
+    
+    border-radius: 25%;
+    transition: 3s;
+}
+
+#titulo_dp{
+    position: relative;
+    left: 25px;
+    top: 30px;
+    padding: 0px 0px 0px 7px;
+    border-left: 8px solid white;
+    text-align: left;
+    width: 1376px;
+    height: 32px;
+    font-size: 32px;
+    bottom: 50px;
+    font-family: "lekton";
+    font-weight: bold;
+    color: white;
+}
+
+.text_dp{
+    color: var(--colortextDP);
+    display: flex;
+    flex-direction: column;
+    width: 844px;
+    height: 258px;
+    padding: 32px 32px;
+    gap: 20px;
+}
+.text_dp #doc_dp{
+    width: 780px;
+    height: 175px;
+    font-weight: 400px;
+    line-height: 25px;
+    font-family: "inria sans";
+    font-style: italic;
+    font-size: 20px;
+}
+.text_dp h2{
+    width: 224px;
+    height: 32px;
+    font-family: "lekton";
+    font-size: 32px;
+}
+.text_dp h5{
+    width: 182px;
+    height: 19px;
+    font-family: "inria sans";
+    font-size: 16px;
+    line-height: 100%;
+    font-weight: 400px;
+}
+.conteudo_dp img{
+    padding: 35px;
+    border: 1px solid white;
+
+}
+.modelo_negocio{
+    width: 100vw;
+    height: 70vh;
+    background-color: white;
+}
+.titulo_mn{
+    position: relative;
+    left: 25px;
+    top: 30px;
+    padding: 0px 0px 0px 7px;
+    border-left: 8px solid var(--corprincipaldosite);
+    text-align: left;
+    width: 1376px;
+    height: 32px;
+    font-size: 32px;
+    bottom: 50px;
+    font-family: "lekton";
+    font-weight: bold;
+    color: var(--corprincipaldosite);
+}
+
+.conteudo_mn{
+    position: relative;
+    top: 75px;
+    left: 280px;
+    width: 1376px;
+    height: 556px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+.conteudo_mn h2{
+    position: relative;
+    bottom: 2px;
+    width: 581px;
+    height: 64px;
+    /* padding-top: 16px;
+    padding-bottom: 16px; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--corprincipaldosite);
+    font-family: "lekton";
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-weight: bold;
+    color: white;
+}
+.conteudo_mn img{
+    width: 581px;
+    height: 308px;
+}
+
+.modelo_bistro{
+    width: 613px;
+    height: 556px;
+    padding: 16px;
+}
+.modelo_quiosque{
+    width: 613px;
+    height: 556px;
+    padding: 16px;
+}
+.modelo_text{
+    width: 581px;
+    height: 152px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.list_mn li{
+    width: 581px;
+    height: 50px;
+    font-family: "inria sans";
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 100%;
+    list-style-type: disc;
+    list-style: inside;
+    padding-left: 10px;
+    letter-spacing: 0%;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--corprincipaldosite);
+    width: 100vw;
+    height: 15vh;
+    gap: 32px;
+}
+.footer h2{
+    font-family: 'just me again down here';
+    color: var(--cortexto);
+    font-size: 24px;
+    font-weight: 400px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--cortexto);
+}
+
+.redes_sociais{
+    width: 323px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.entre_contato{
+    width: 302px;
+    height: 36px;
+    gap: 16px;
+}
+
+#footer_text_dvs{
+    position: relative;
+    top: 40px;
+}
+#footer_text_contato{
+    position: relative;
+    right: 20px;
+    gap: 10px;
+}
+
+.footer_social-icon{
+    font-size: 32px;
+}
+
 
