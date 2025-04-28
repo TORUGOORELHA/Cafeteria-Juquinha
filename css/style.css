@@ -67,8 +67,7 @@ header{
     color: var(--textodestaquecabesalho);
 }
 .menu{
-    position: relative;
-    bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .menu ul{
@@ -193,9 +192,8 @@ header{
 }
 
 .beneficios{
-    position: relative;
-    top: 75px;
-    gap: 30px;
+    margin-left: 30px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,9 +248,8 @@ header{
     height: 70vh;
 }
 .conteudo_dp{
-    position: relative;
-    top: 45px;
-    left: 250px;
+    margin-left: 30px;
+    margin-top: 50px;
     width: 1376px;
     height: 483px;
     display: flex;
@@ -341,9 +338,8 @@ header{
 }
 
 .conteudo_mn{
-    position: relative;
-    top: 75px;
-    left: 280px;
+    margin-left: 300px;
+    margin-top: 70px;
     width: 1376px;
     height: 556px;
     display: flex;
@@ -412,6 +408,11 @@ header{
     height: 15vh;
     gap: 32px;
 }
+
+
+
+
+
 .footer h2{
     font-family: 'just me again down here';
     color: var(--cortexto);
@@ -423,6 +424,7 @@ header{
 }
 
 .redes_sociais{
+    margin-left: 40px;
     width: 323px;
     height: 36px;
     display: flex;
@@ -449,5 +451,72 @@ header{
 .footer_social-icon{
     font-size: 32px;
 }
+@media screen and (max-width: 600px) and (min-width: 400px){
+    .logo_titulo{
+        position: relative;
+        top: 0px;
+        right: 0px;
+        font-size: 50px;
+    }
+    .menu li, a{
+        font-size: 20px;
+    }
+    .fraq_registrar{
+        text-align: center;
+        flex-direction: column;
+        margin-left: 0px;
+        width: 500px;
+        height: 237px;
+        
+    }
+    .fraq_registrar h1{
+        margin-right: 50px;
+    }
+    .sejafranqueado{
+        justify-self: center;
+        align-items: center;
+    }
+    .beneficios_vantagens{
+        width: 100vw;
+        height: auto;
+    }
+    .beneficios{
+        padding: 20px;
+        gap: 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .buttons_franq{
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    .depoimentos{
+        width: 100vw;
+        height: auto;
+    }
+    .conteudo_dp{
+        flex-direction: column;
+        left: 0px;
+    }
+    .modelo_negocio{
+        width: 100vw;
+        height: 1360px;
+    }
+    .conteudo_mn{
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .footer{
+        margin: 0%;
 
+    }
+    #footer_text_dvs{
+        position: none;
+        top: 0px;
+        
+    }
+    
+}
 
